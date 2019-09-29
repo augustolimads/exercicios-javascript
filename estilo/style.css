@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font: bold 1.5rem Helvetica;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    background-color: dodgerblue;
+    height: 100vh;
+}
+/*Configurações dos cards*/
+.card-group{
+    align-content: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 40vw;
+    height: 60vh;
+}
+.card-title{
+    text-align: center;
+}
+/*entrada e saida*/
+.entrada{
+    background-color: whitesmoke;    
+}
+.saida{
+    background-color: rgba(192, 192, 192, 0.534);
+}
+/*formularios*/
+.form-flex{
+    display: flex;
+    align-items: center;
+}
+.form-num{
+    margin: 0 1rem;
+}
+/* queries */
+@media only screen and (max-width: 768px){
+    *{
+        font-size: 1rem;
+    }
+    .card{
+        width: 90vw;
+
+    }
+}
