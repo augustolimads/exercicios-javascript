@@ -41,6 +41,15 @@
 .form-num{
     margin: 0 1rem;
 }
+/*footer*/
+footer{
+    font-size: 0.8rem;
+    background: black;
+    color: white;
+    height: 15vh;
+    text-align: center;
+    padding: 1.5em;    
+}
 /* queries */
 @media only screen and (max-width: 768px){
     *{
