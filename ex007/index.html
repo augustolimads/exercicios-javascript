@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sorteio</title><!-- ALTERE -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- proprio -->
+    <link rel="stylesheet" href="../estilo/style.css">
+</head>
+<body>
+    <section class="main">
+        <!-- cards entrada e saida -->
+        <div class="card-group">
+
+            <div class="card card-body entrada">
+                <h3 class="card-title">Sorteio: </h5><!-- ALTERE -->
+                <form>
+                    <div class="form-group" id="formulario">
+                        <label for="qtd" value="nome">Qtd. de alunos:</label>
+                        <input class="form-control" type="number" name="qtd" id="qtd">
+                        <button class="btn btn-primary" id="btn-qtd">Armazenar</button>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for=""></label>
+                        <input class="form-control" type="number" id="entrada">
+                    </div> -->
+                </form>
+            </div>
+
+            <div class="card card-body saida">
+                <p class="card-text" id="saida"></p><!-- TITULO -->
+            </div>
+        </div>
+
+    </section>
+
+    <!-- javascript bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- javascript proprio -->
+    <script src="script.js"></script>
+</body>
+</html>
