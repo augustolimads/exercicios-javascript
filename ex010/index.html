@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Calculando média</title><!-- ALTERE -->
+    <title>Sorteio</title><!-- ALTERE -->
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- proprio -->
     <link rel="stylesheet" href="../estilo/style.css">
+    <style>
+        .form-num{
+            width: 6vw;
+        }
+        .form-item {
+            margin: 0.5rem;
+        }
+    </style>
 </head>
 <body>
     <section class="main">
@@ -16,13 +24,22 @@
         <div class="card-group">
 
             <div class="card card-body entrada">
-                <h3 class="card-title">Tabuada de: </h3><!-- ALTERE -->
-                <form>
-                    <div class="form-group">
-                        <input class="form-control" type="number" id="entrada">
+                <h3 class="card-title">Sorteio: </h3><!-- ALTERE -->
+                
+                    <form>
+                    <div class="form-group form-flex" id="formulario">
+                        <label class="form-item" for="qtd" value="nome">Qtd. de alunos:</label>
+                        <input class="form-control form-item form-num" type="number" max="10" min="1" name="qtd" id="qtd">
+                        <button class="btn btn-secondary form-item" id="armazenar">Armazenar</button>
                     </div>
+                    <hr>
+
+                    <div class="form-group form-flex" id="lista-nomes">
+                        <label class="form-item" for="">Aluno: </label>
+                        <input class="form-control form-item form-control-sm" type="text" id="nome">
+                    </div>
+                    <button class="btn btn-primary" id="sortear">Sortear</button>
                 </form>
-                <button class="btn btn-primary" id="btn">Enviar</button>
             </div>
 
             <div class="card card-body saida">

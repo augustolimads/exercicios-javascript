@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Calculando média</title><!-- ALTERE -->
+    <title>Analisador de Nomes</title><!-- ALTERE -->
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- proprio -->
     <link rel="stylesheet" href="../estilo/style.css">
+    <style>
+        .texto{
+            font-weight: 100;
+            font-size: 0.8rem;
+        }
+        .label-nome{
+            margin-right: 1rem;
+        }
+    </style>
 </head>
 <body>
     <section class="main">
@@ -16,17 +25,20 @@
         <div class="card-group">
 
             <div class="card card-body entrada">
-                <h3 class="card-title">Tabuada de: </h3><!-- ALTERE -->
-                <form>
-                    <div class="form-group">
-                        <input class="form-control" type="number" id="entrada">
-                    </div>
-                </form>
-                <button class="btn btn-primary" id="btn">Enviar</button>
+                <h3 class="card-title">Analisador de Nomes </h3><!-- ALTERE -->
+                    <p class="texto">Digite seu nome para que seja analisado... </p>
+                    <form>
+                        <div class="form-group form-flex">
+                            <label class="label-nome" for="nome">Nome: </label>
+                            <input name="nome" class="form-control" type="text" id="entrada">
+                        </div>
+                    </form>
+                <button class="btn btn-primary btn-lg btn-block" id="btn">Enviar</button>
             </div>
 
             <div class="card card-body saida">
-                <p class="card-text" id="saida"></p><!-- TITULO -->
+                
+                <div id="saida"></div>
             </div>
         </div>
 

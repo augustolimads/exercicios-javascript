@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sorteio</title><!-- ALTERE -->
+    <title>Tocando música</title><!-- ALTERE -->
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- proprio -->
@@ -16,22 +16,13 @@
         <div class="card-group">
 
             <div class="card card-body entrada">
-                <h3 class="card-title">Sorteio: </h5><!-- ALTERE -->
-                <form>
-                    <div class="form-group" id="formulario">
-                        <label for="qtd" value="nome">Qtd. de alunos:</label>
-                        <input class="form-control" type="number" name="qtd" id="qtd">
-                        <button class="btn btn-primary" id="btn-qtd">Armazenar</button>
-                    </div>
-                    <!-- <div class="form-group">
-                        <label for=""></label>
-                        <input class="form-control" type="number" id="entrada">
-                    </div> -->
-                </form>
+                <h3 class="card-title">Tocando música </h3><!-- ALTERE -->
+                <button class="btn btn-primary btn-lg btn-block" id="btn">Enviar</button>
             </div>
 
             <div class="card card-body saida">
-                <p class="card-text" id="saida"></p><!-- TITULO -->
+                <audio src="laser.mp3" id="saida"></audio>
+                <p id="texto-saida"></p>
             </div>
         </div>
 
